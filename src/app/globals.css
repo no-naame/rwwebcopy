@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .nth-child-1\:bg-red-500:nth-child(1) {
+        background-color: #f56565;
+    }
+    .nth-child-2\:bg-blue-500:nth-child(2) {
+        background-color: #000000;
+    }
+    .nth-child-odd\:bg-green-500:nth-child(odd) {
+        background-color: #48bb78;
+    }
+    .nth-child-even\:bg-yellow-500:nth-child(even) {
+        background-color: #ecc94b;
+    }
+}
