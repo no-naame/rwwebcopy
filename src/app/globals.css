@@ -19,3 +19,54 @@
         background-color: #ecc94b;
     }
 }
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th, td {
+    word-wrap: break-word;
+    white-space: pre-wrap; /* Ensure that long words break and wrap within the cell */
+    text-align: center;
+    padding: 10px; /* Add some padding for better readability */
+}
+
+th {
+    border-bottom: 2px solid #ccc;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.max-w-7xl {
+    max-width: 1280px;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-red-600 {
+    color: #dc2626;
+}
+
+.text-6xl {
+    font-size: 3.75rem;
+}
+
+.mb-20 {
+    margin-bottom: 5rem;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}

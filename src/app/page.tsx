@@ -2,10 +2,14 @@ import Image from "next/image";
 import Pricing from "@/components/Pricing";
 import HomePage from "@/components/HomePage";
 import CommunityPage from "@/components/CommunityPage";
+import MainBlogPage from "@/components/MainBlogPage";
+import BlogPage from "@/components/BlogPage";
 export default function Home() {
   return (
       // <Pricing/>
       // <HomePage/>
-      <CommunityPage/>
+      // <CommunityPage/>
+      // <MainBlogPage/>
+      <BlogPage/>
   );
 }
