@@ -8,8 +8,8 @@ export default function Home() {
   return (
       // <Pricing/>
       // <HomePage/>
-      // <CommunityPage/>
+      <CommunityPage/>
       // <MainBlogPage/>
-      <BlogPage/>
+      // <BlogPage/>
   );
 }

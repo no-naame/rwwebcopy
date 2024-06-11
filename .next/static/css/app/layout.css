@@ -1603,9 +1603,9 @@ table {
 
 th, td {
     word-wrap: break-word;
-    white-space: pre-wrap; /* Ensure that long words break and wrap within the cell */
+    white-space: pre-wrap;
     text-align: center;
-    padding: 10px; /* Add some padding for better readability */
+    padding: 10px;
 }
 
 th {
