@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import Stepone from "../../public/one.png";
 import steptwo from "../../public/two.png";
 import stepthree from "../../public/three.png";
@@ -9,16 +9,25 @@ import imageone from "../../public/StepOneMain.png";
 import imagetwo from "../../public/StepTwoMain.png";
 import imagethree from "../../public/StepThreeMain.png";
 import imagefour from "../../public/StepFourMain.jpeg";
-import {number} from "prop-types";
-import {step} from "next/dist/experimental/testmode/playwright/step";
 
-const Steps = ({stepList}) => {
+interface Step {
+    img: StaticImageData;
+    imgMain: StaticImageData;
+    title: string;
+    text: string;
+}
+
+interface StepsProps {
+    stepList: Step[];
+}
+
+const Steps: React.FC<StepsProps> = ({ stepList }) => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll('.step-section');
-            sections.forEach((section, index ) => {
+            sections.forEach((section, index) => {
                 const rect = section.getBoundingClientRect();
                 const windowHeight = window.innerHeight;
                 if (rect.top < windowHeight && rect.bottom >= 0) {
@@ -34,9 +43,7 @@ const Steps = ({stepList}) => {
     }, []);
 
     return (
-        <>
-
-            <div className="flex flex-col items-center justify-center space-y-10 bg-white p-10">
+        <div className="flex flex-col items-center justify-center space-y-10 bg-white p-10">
             {stepList.map((step, index) => (
                 <div key={index} className={`w-full max-w-3xl step-section ${activeIndex === index ? 'opacity-100' : 'opacity-60'}`} style={{ transition: 'opacity 0.5s' }}>
                     <div className="flex">
@@ -64,7 +71,6 @@ const Steps = ({stepList}) => {
                 </div>
             ))}
         </div>
-        </>
     );
 };
 
