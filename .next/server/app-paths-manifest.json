@@ -1,5 +1,6 @@
 {
-  "/pricing/page": "app/pricing/page.js",
-  "/page": "app/page.js",
-  "/about/page": "app/about/page.js"
+  "/Terms/page": "app/Terms/page.js",
+  "/Refund/page": "app/Refund/page.js",
+  "/Privacy/page": "app/Privacy/page.js",
+  "/page": "app/page.js"
 }
