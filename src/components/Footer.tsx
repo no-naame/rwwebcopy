@@ -10,13 +10,6 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <>
-            <div
-                className="mt-12 bg-[#C5393A] flex justify-center items-center gap-10 text-white text-center py-4 h-[168px]">
-                <h3 className="text-4xl font-medium mt-1">Ready to get started?</h3>
-                <Button className="bg-white mt-[3px] text-red-600 font-medium py-2 px-4 rounded-3xl hover:bg-gray-100">
-                    Register Now
-                </Button>
-            </div>
 
             <footer
                 className='footer bg-[#101010] text-[#FCFCFC] p-[40px] md:px-8 lg:px-20 border border-t-2 border-t-[#DD2020] border-l-[black] border-r-[black] border-b-[black]'>

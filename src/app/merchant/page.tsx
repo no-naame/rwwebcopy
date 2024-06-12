@@ -5,6 +5,7 @@ import CommunityPage from "@/components/CommunityPage";
 export default function Home() {
     return (
         // <Pricing/>
-        <HomePage/>
+        // <HomePage/>
+        <CommunityPage/>
     );
 }

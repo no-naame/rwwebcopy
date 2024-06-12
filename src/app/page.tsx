@@ -10,8 +10,8 @@ import dynamic from "next/dynamic";
 export default function Home() {
   return (
       // <Pricing/>
-      // <HomePage/>
-      <CommunityPage/>
+      <HomePage/>
+      // <CommunityPage/>
 
       // <MainBlogPage/>
       // <BlogPage/>
