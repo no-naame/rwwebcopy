@@ -1,5 +1,4 @@
-"use client"
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image, { StaticImageData } from "next/image";
 import fashion from "../../public/slider/fashion.png";
 import schools from "../../public/slider/schools.png";
@@ -25,9 +24,9 @@ function Card({
               }: CardProps): React.JSX.Element {
     return (
         <section
-            className={`flex flex-col items-center rounded-t-[30px] rounded-b-[3%] max-md:px-5 ${className}`}
+            className={`flex flex-col font-inter items-center rounded-t-[30px] rounded-b-[3%] max-md:px-5 animate-loop-scroll ${className} `}
         >
-            <h2 className="text-[28px] font-light mt-3">{title}</h2>
+            <h2 className="text-[28px] font-inter font-light mt-3">{title}</h2>
             <Image
                 loading="lazy"
                 src={imgSrc}
@@ -84,41 +83,15 @@ function Slider() {
         },
     ];
 
-    const scrollRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const scrollContainer = scrollRef.current;
-        if (!scrollContainer) return;
-
-        let scrollAmount = 0;
-        const scrollStep = 3;
-        const scrollInterval = 30;
-
-        const scroll = () => {
-            scrollAmount += scrollStep;
-            if (scrollAmount >= scrollContainer.scrollWidth / 2) {
-                scrollAmount = 0;
-            }
-            scrollContainer.scrollTo({
-                left: scrollAmount,
-                behavior: 'smooth',
-            });
-        };
-
-        const interval = setInterval(scroll, scrollInterval);
-
-        return () => clearInterval(interval);
-    }, []);
-
     return (
         <>
-            <div className="ml-20 p-8 ">
-                <div className="text-xl font-light">Shop category wise</div>
-                <div className="text-2xl font-normal">Explore Categories</div>
+            <div className="ml-20 p-7 font-inter">
+                <div className="text-xl font-normal">Shop category wise</div>
+                <div className="text-2xl font-medium">Explore Categories</div>
             </div>
             <div className="flex items-center justify-center w-full">
-                <div ref={scrollRef} className="flex justify-start overflow-x-auto p-8 w-[95%] gap-5 hide-scrollbar">
-                    {[...cards, ...cards].map((card, index) => (
+                <div className="flex overflow-x-auto p-8 w-[95%] gap-5">
+                    {cards.map((card, index) => (
                         <Card
                             key={index}
                             {...card}
@@ -127,13 +100,21 @@ function Slider() {
                     ))}
                 </div>
             </div>
-            <section
-                className="flex justify-center items-center px-16 py-14 mt-12 w-full mb-20 bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-                <div className="flex flex-col w-full max-w-[1230px] max-md:max-w-full">
-                    <h3 className="text-xl font-light text-black max-md:max-w-full">Offers from 10+ brands</h3>
-                    <h3 className=" text-2xl font-medium text-black max-md:max-w-full">In spotlight</h3>
+            <section className="flex justify-center items-center px-5 py-14 mt-12 w-full bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full mb-20">
+                <div className="flex flex-col w-full max-w-[1390px] max-md:max-w-full">
+                    <h3 className="text-xl font-inter font-light text-black max-md:max-w-full">
+                        Offers from 10+ brands
+                    </h3>
+                    <h3 className=" text-2xl font-inter font-medium text-black max-md:max-w-full">
+                        In spotlight
+                    </h3>
                     <div className="flex flex-col justify-center py-7 mt-14 max-md:mt-10 max-md:max-w-full">
-                        <Image loading="lazy" src={bigBasket} className="w-full" alt="Spotlight Offers"/>
+                        <Image
+                            loading="lazy"
+                            src={bigBasket}
+                            className="w-full"
+                            alt="Spotlight Offers"
+                        />
                     </div>
                 </div>
             </section>
