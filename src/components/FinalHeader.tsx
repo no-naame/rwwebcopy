@@ -88,7 +88,7 @@ const FinalHeader = () => {
 
                                 <div className="flex flex-col">
                                     <Link
-                                        href="/About"
+                                        href="/about"
                                         onMouseEnter={() => handleMouseEnter("about")}
                                         onMouseLeave={handleMouseLeave}
                                         className={`about md:px-4 py-3 cursor-pointer hover:text-[#C43939] transition hover:scale-110 duration-400 ${
