@@ -22,7 +22,7 @@ const Steps: React.FC<StepsProps> = ({ stepList }) => {
             sections.forEach((section, index) => {
                 const rect = section.getBoundingClientRect();
                 const windowHeight = window.innerHeight;
-                if (rect.top < windowHeight && rect.bottom >= 0) {
+                if (rect.top < windowHeight * 0.5 && rect.bottom >= 0) {
                     setActiveIndex(index);
                 }
             });
@@ -39,22 +39,22 @@ const Steps: React.FC<StepsProps> = ({ stepList }) => {
             {stepList.map((step, index) => (
                 <div
                     key={index}
-                    className={`w-full max-w-3xl step-section ${activeIndex === index ? 'opacity-100 mr-5' : 'opacity-60'}`}
+                    className={`w-full max-w-3xl step-section ${activeIndex === index ? 'opacity-100' : 'opacity-60'}`}
                     style={{ transition: 'opacity 0.5s' }}
                 >
                     <div className="flex">
                         <div className="flex flex-col items-center mr-4">
-                            <div className="flex mt-14 mr-5">
-                                <h1 className="mr-4 text-2xl font-semibold text-red-700 mt-[6px]">Step</h1>
+                            <div className={`flex mt-14 ${activeIndex === index ? 'mr-14' : 'mr-5'}`}>
+                                <h1 className={`mr-4 text-2xl font-semibold text-red-700 mt-[6px]`}>Step</h1>
                                 <Image
-                                    className="h-12 w-12 text-[#bd1e59]"
+                                    className={`h-12 w-12 text-[#bd1e59]`}
                                     src={activeIndex === index ? step.img[1] : step.img[0]}
                                     alt={`step ${index + 1}`}
                                 />
                             </div>
                             {index < 3 && <div className="h-[180px] w-px bg-[#C5393A] mr-5 ml-[75px] mt-5" />}
                         </div>
-                        <div className="w-[160px] h-[160px] overflow-hidden rounded-full">
+                        <div className={`overflow-hidden rounded-full ${activeIndex === index ? 'w-[200px] h-[200px]' : 'w-[160px] h-[160px]'}`}>
                             <Image
                                 src={step.imgMain}
                                 alt={`step ${index + 1} image`}
