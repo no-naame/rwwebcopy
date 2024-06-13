@@ -50,9 +50,9 @@ const list = [{
 const ShoppingBanner = () => {
     return(
         <>
-            <div className="max-w-[100%] overflow-hidden">
-                <div className="mt-[70px] p-3 flex justify-between">
-                    <div className="relative left-[35px] shopping z-10">
+            <div className="relative max-w-[100%] mb-[120px] overflow-x-hidden">
+                <div className="mt-[10px] p-3 flex gap-1 justify-between items-center max-md:justify-center">
+                    <div className=" shopping z-10 ml-10">
                         <div className="text-5xl font-bold text-start text-[#272727]">Ab pay karna</div>
                         <div className="text-start text-[33px] mt-2 font-semibold text-[#272727]">
                             <h2 className="ml-[80px] max-w-[200px] -rotate-6 mt-1 relative right-4">
@@ -65,30 +65,20 @@ const ShoppingBanner = () => {
                             <span className="text-[#C43939]">Mazedarr!</span>
                         </div>
                         <div className="mt-6 text-start font-semibold font-lato text-[#000] text-[22px] z-50">
-                            Unlock rewards and cashback on every transaction.<br/>
+                            Unlock rewards and on every transaction.<br/>
                             Only on RewardWise!
                         </div>
-                        <div className="Download mt-[350px] scale-125 relative left-20">
+                        <div className="Download mt-[350px]">
                             <div className="font-semibold text-center max-w-[80%] font-lato">
                                 Download The App NOW!
                             </div>
-                            <div className="button flex justify-between align-middle mt-[10px]">
-                                <Image
-                                    src={google}
-                                    alt="Google Play"
-                                    width={150}
-                                    height={50}
-                                    className="scale-110 mt-0"
-                                    placeholder="blur"
-                                />
-                                <Image
-                                    src={apple}
-                                    alt="App Store"
-                                    width={180}
-                                    height={50}
-                                    className="scale-100 mr-[250px]"
-                                    placeholder="blur"
-                                />
+                            <div className="button flex justify-between items-center mt-[10px]">
+                                <div className=' max-w-[180px]'>
+                                    <Image src={google} alt='google'/>
+                                </div>
+                                <div className='max-w-[190px]'>
+                                    <Image src={apple} alt='appstore'/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,19 +86,21 @@ const ShoppingBanner = () => {
                         <Image
                             src={mainPagePic}
                             alt="mainPic"
+                            className='max-md:absolute max-md:hidden'
                         />
                     </div>
                 </div>
             </div>
             <div className="bg-[#FBE74E] mb-[30px] p-4 w-[100%] overflow-hidden">
-                <div className="flex justify-evenly items-center gap-7">
-                    <Image
-                        src={yellowImage}
-                        alt="Happy Shopper"
-                        className="max-w-[600px] scale-125 "
-                    />
+                <div className="flex justify-evenly flex-wrap items-center gap-7">
+                    <div className="max-w-[600px] scale-125 ">
+                        <Image
+                            src={yellowImage}
+                            alt="Happy Shopper"
+                        />
+                    </div>
                     <div className="">
-                        <div className="flex items-start max-md:flex-col max-md:items-center">
+                        <div className="flex items-start">
                             <div className="text-7xl font-passionOne mr-1 max-md:mb-4">&#8220;</div>
                             <div className="text-4xl font-lato leading-relaxed max-md:text-3xl max-md:leading-normal">
                                 I deserve the bonuses that <br/>
@@ -132,15 +124,15 @@ const ShoppingBanner = () => {
             <Steps stepList={list}/>
 
             <div className='p-[20px]'>
-                <div className=' text-[56px] p-[20px] mx-[100px] text-center font-semibold'>
+                <div className=' text-5xl p-[20px] mx-[100px] max-md:mx-6 text-center font-semibold'>
                     Join the <span className=' text-[#C5393A]'>loyalty programs</span> that rewards you on <span
                     className='text-[#C5393A]'>every transaction</span>
                 </div>
             </div>
-            <div className='bg-[#FFCB33] relative flex justify-around overflow-hidden'>
+            <div className='bg-[#FFCB33] relative flex justify-between overflow-hidden'>
                 <div className='left relative flex justify-center items-center right-5'>
                     <Image src={Jumping} alt='jumping' height={450} width={450}
-                           className='z-10 scale-[1.2] relative top-1 -right-28 mt-40 mb-40'/>
+                           className='z-10 scale-[1.2] relative max-md:absolute top-1 -right-28 mt-40 mb-40'/>
                     <Image src={V1} alt='V1' className='absolute scale-[1.5] -left-14'/>
                     <Image src={V2} alt='V2' className=' absolute scale-[1.1] -left-32 top-24 z-20'/>
                     <Image src={V3} alt='V3' className=' absolute  -left-44'/>
@@ -155,10 +147,8 @@ const ShoppingBanner = () => {
                     </div>
                 </div>
                 <div className='right flex flex-col justify-between'>
-                    <Image src={Trumpet} className='right opacity-0 ' width={250} height={280} alt='trumpet'/>
-                    <Image src={Trumpet} className='absolute right-0' width={252} height={283} alt='trumpet'/>
-                    <Image src={Binoculars} width={350} height={250} className='scale-[1.2] absolute bottom-0 right-0'
-                           alt='binoculars'/>
+                    <Image src={Trumpet} className='relative self-end' width={252} height={283} alt='trumpet'/>
+                    <Image src={Binoculars} width={350} height={250} className='scale-[1.2] relative' alt='binoculars'/>
                 </div>
             </div>
 

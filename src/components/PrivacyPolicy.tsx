@@ -2,7 +2,7 @@ function Privacy(){
     return (
         <>
             <div>
-                <div className="mx-[250px] mt-10 mb-[40px]">
+                <div className="mx-[250px] max-md:mx-14 mt-10 mb-[40px]">
                     <h1 className="font-bold text-[56px]">Privacy Policy</h1>
                     <div className="mx-[20px] text-[20px]">
                         <p>Privacy Policy</p>

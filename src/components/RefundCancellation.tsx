@@ -1,7 +1,7 @@
 function Refund(){
     return(
         <>
-            <div className="mx-[250px] mt-20 text-[20px] mb-[20px]">
+            <div className="mx-[250px] max-md:mx-14 mt-20 text-[20px] mb-[20px]">
                 <h1 className="font-bold text-[56px]">Cancellation & Refund Policy</h1>
                 <br></br>
                 <div className="ml-[20px]">

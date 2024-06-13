@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 
+
+html, body {
+    @apply w-full overflow-x-hidden;
+}
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }

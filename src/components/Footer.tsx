@@ -13,8 +13,8 @@ const Footer = () => {
 
             <footer
                 className='footer bg-[#101010] text-[#FCFCFC] p-[40px] md:px-8 lg:px-20 border border-t-2 border-t-[#DD2020] border-l-[black] border-r-[black] border-b-[black]'>
-                <div className='mx-[100px] max-w-7xl mb-[26px]'>
-                    <div className='info flex flex-col md:flex-row justify-between'>
+                <div className='mx-[100px] max-md:mx-6  max-w-7xl mb-[26px]'>
+                    <div className='info flex flex-wrap justify-between max-sm:flex-col max-sm:items-center'>
                         <div className='logo flex flex-col gap-[80px] mb-6 '>
                             <div className='flex flex-col gap-4'>
                                 <div className='logoTitle flex items-end gap-4'>
@@ -36,7 +36,7 @@ const Footer = () => {
                                        className='scale-125 mt-0 ml-2 mr-2' placeholder='blur'/>
                             </div>
                         </div>
-                        <div className='legal flex flex-col gap-4 md:mb-0 ml-6 mb-[36px]'>
+                        <div className='legal max-sm:pl-10 flex flex-col gap-4 md:mb-0 ml-6 mb-[36px]'>
                             <div className='text-2xl font-semibold text-white'>Legal</div>
                             <Link href='/Privacy' className='text-xl'>Privacy Policy</Link>
                             <Link href='/Terms' className='text-xl'>Terms & Conditions</Link>
@@ -44,7 +44,7 @@ const Footer = () => {
                             <div className='text-xl'>Data & Security</div>
                             <div className='text-xl'>Documents</div>
                         </div>
-                        <div className='company flex flex-col gap-4'>
+                        <div className='company max-sm:pl-16 flex flex-col gap-4'>
                             <div className='text-2xl font-semibold text-white md:ml-[28px]'>Company</div>
                             <div className='flex gap-3 items-center'>
                                 <FaPhone size={18} className='text-white scale-x-[-1]'/>

@@ -1,7 +1,7 @@
 function Term(){
     return(
         <>
-            <div className="mx-[260px] pl-[20px] pt-10 mb-[70px]">
+            <div className="mx-[260px] max-md:mx-14 pl-[20px] pt-10 mb-[70px]">
                 <h1 className="font-bold text-[56px]">Term and Conditions</h1>
                 <div className="text-[20px] mt-7">
                     <div className="general">
