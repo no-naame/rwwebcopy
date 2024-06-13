@@ -790,6 +790,9 @@ video {
 .mt-\[6px\]{
   margin-top: 6px;
 }
+.mr-20{
+  margin-right: 5rem;
+}
 .line-clamp-2{
   overflow: hidden;
   display: -webkit-box;

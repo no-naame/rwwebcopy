@@ -1,17 +1,9 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Image, {StaticImageData} from "next/image";
-import Stepone from "../../public/one.png";
-import steptwo from "../../public/two.png";
-import stepthree from "../../public/three.png";
-import stepfour from "../../public/four.png";
-import imageone from "../../public/StepOneMain.png";
-import imagetwo from "../../public/StepTwoMain.png";
-import imagethree from "../../public/StepThreeMain.png";
-import imagefour from "../../public/StepFourMain.jpeg";
+import Image, { StaticImageData } from "next/image";
 
 interface Step {
-    img: StaticImageData;
+    img: StaticImageData[];
     imgMain: StaticImageData;
     title: string;
     text: string;
@@ -26,7 +18,7 @@ const Steps: React.FC<StepsProps> = ({ stepList }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = document.querySelectorAll('.step-section');
+            const sections = document.querySelectorAll<HTMLElement>('.step-section');
             sections.forEach((section, index) => {
                 const rect = section.getBoundingClientRect();
                 const windowHeight = window.innerHeight;
@@ -45,12 +37,20 @@ const Steps: React.FC<StepsProps> = ({ stepList }) => {
     return (
         <div className="flex flex-col items-center justify-center space-y-10 bg-white p-10">
             {stepList.map((step, index) => (
-                <div key={index} className={`w-full max-w-3xl step-section ${activeIndex === index ? 'opacity-100' : 'opacity-60'}`} style={{ transition: 'opacity 0.5s' }}>
+                <div
+                    key={index}
+                    className={`w-full max-w-3xl step-section ${activeIndex === index ? 'opacity-100 mr-5' : 'opacity-60'}`}
+                    style={{ transition: 'opacity 0.5s' }}
+                >
                     <div className="flex">
                         <div className="flex flex-col items-center mr-4">
                             <div className="flex mt-14 mr-5">
                                 <h1 className="mr-4 text-2xl font-semibold text-red-700 mt-[6px]">Step</h1>
-                                <Image className="h-12 w-12 text-[#bd1e59]" src={step.img} alt={`step ${index + 1}`} />
+                                <Image
+                                    className="h-12 w-12 text-[#bd1e59]"
+                                    src={activeIndex === index ? step.img[1] : step.img[0]}
+                                    alt={`step ${index + 1}`}
+                                />
                             </div>
                             {index < 3 && <div className="h-[180px] w-px bg-[#C5393A] mr-5 ml-[75px] mt-5" />}
                         </div>
@@ -64,8 +64,8 @@ const Steps: React.FC<StepsProps> = ({ stepList }) => {
                             />
                         </div>
                         <div className="flex-1 min-w-0 mt-7 ml-9">
-                            <h3 className="text-2xl font-semibold text-gray-900">{step.title}</h3>
-                            <p className="mt-1 text-lg text-gray-600" dangerouslySetInnerHTML={{ __html: step.text }}></p>
+                            <h3 className={`font-semibold text-gray-900 ${activeIndex === index ? 'text-3xl' : 'text-2xl'}`}>{step.title}</h3>
+                            <p className={`mt-1 text-gray-600 ${activeIndex === index ? 'text-xl' : 'text-lg'}`} dangerouslySetInnerHTML={{ __html: step.text }}></p>
                         </div>
                     </div>
                 </div>

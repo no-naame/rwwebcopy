@@ -13,23 +13,27 @@ import stepfour from "../../public/four.png";
 import imagefour from "../../public/StepFourMain.jpeg";
 import {Button} from "@/components/ui/button";
 import React from "react";
+import redOne from "../../public/one.png";
+import redTwo from "../../public/Stepper indicatorstepone.png";
+import redThree from "../../public/Stepper indicatorstepthree.png";
+import redFour from "../../public/Stepper indicatorstepfour.png";
 const list = [{
-    img: Stepone,
+    img: [Stepone,redOne],
     imgMain: imageone,
     title: "Get Started: Create Your Merchant Account",
     text: `Simply provide your business information and get instant access to a powerful suite of loyalty tools.`
 }, {
-    img: steptwo,
+    img: [steptwo,redTwo],
     imgMain: imagetwo,
     title: "List Your Products & Services",
     text: "Simply provide your business information and get instant access to a powerful suite of loyalty tools."
 }, {
-    img: stepthree,
+    img: [stepthree,redThree],
     imgMain: imagethree,
     title: "Drive Sales with Targeted Offers & Promotions",
     text: "Simply provide your business information and get instant access to a powerful suite of loyalty tools."
 }, {
-    img: stepfour,
+    img: [stepfour,redFour],
     imgMain: imagefour,
     title: "Earnings & Insights: Track Your Success",
     text: "Simply provide your business information and get instant access to a powerful suite of loyalty tools."

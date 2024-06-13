@@ -16,7 +16,7 @@ import V3 from '../../public/Vector 43purs.png'
 import Jumping from '../../public/youngWomanJumping.png'
 import Binoculars from '../../public/handHoldingBinoculars.png'
 import main2 from '../../public/Main.png'
-import Stepone from "../../public/one.png";
+import Stepone from "../../public/Stepper indicator.png";
 import imageone from "../../public/StepOneMain.png";
 import steptwo from "../../public/two.png";
 import imagetwo from "../../public/StepTwoMain.png";
@@ -24,23 +24,27 @@ import stepthree from "../../public/three.png";
 import imagethree from "../../public/StepThreeMain.png";
 import stepfour from "../../public/four.png";
 import imagefour from "../../public/StepFourMain.jpeg";
+import redOne from "../../public/one.png"
+import redTwo from "../../public/Stepper indicatorstepone.png"
+import redThree from "../../public/Stepper indicatorstepthree.png"
+import redFour from "../../public/Stepper indicatorstepfour.png"
 const list = [{
-    img: Stepone,
+    img: [Stepone,redOne],
     imgMain: imageone,
     title: "Download App from Google Play Store",
     text: `Download the app from the <a href="#" className="text-[#bd1e59]">Google Play Store</a> and SignUp or Login to your account.`
 }, {
-    img: steptwo,
+    img: [steptwo,redTwo],
     imgMain: imagetwo,
     title: "Shop",
     text: "Browse and shop for café treats, restaurant meals, electronics, fashion, and more, all in one convenient app, mirroring your favorite local or preferred stores."
 }, {
-    img: stepthree,
+    img: [stepthree,redThree],
     imgMain: imagethree,
     title: "Scan",
     text: "Simply scan the shop's QR code via the app and complete your payment securely through online mode."
 }, {
-    img: stepfour,
+    img: [stepfour,redFour],
     imgMain: imagefour,
     title: "Redeem",
     text: "Maximize your savings by enjoying exclusive offers, discounts, vouchers, and loyalty rewards from businesses, while simultaneously boosting the coin value for the respective shop."
