@@ -52,7 +52,7 @@ const Steps: React.FC<StepsProps> = ({ stepList }) => {
                                 <h1 className="mr-4 text-2xl font-semibold text-red-700 mt-[6px]">Step</h1>
                                 <Image className="h-12 w-12 text-[#bd1e59]" src={step.img} alt={`step ${index + 1}`} />
                             </div>
-                            {index < 3 && <div className="h-[180px] w-px bg-[#C5393A] mr-5 ml-[53px] mt-5" />}
+                            {index < 3 && <div className="h-[180px] w-px bg-[#C5393A] mr-5 ml-[75px] mt-5" />}
                         </div>
                         <div className="w-[160px] h-[160px] overflow-hidden rounded-full">
                             <Image

@@ -811,6 +811,21 @@ video {
 .mr-20{
   margin-right: 5rem;
 }
+.ml-\[55px\]{
+  margin-left: 55px;
+}
+.ml-\[60px\]{
+  margin-left: 60px;
+}
+.ml-\[70px\]{
+  margin-left: 70px;
+}
+.ml-\[170px\]{
+  margin-left: 170px;
+}
+.ml-\[75px\]{
+  margin-left: 75px;
+}
 .line-clamp-2{
   overflow: hidden;
   display: -webkit-box;
