@@ -100,8 +100,8 @@ function Slider() {
                     ))}
                 </div>
             </div>
-            <section className="flex justify-center items-center px-5 py-14 mt-12 w-full bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full mb-20">
-                <div className="flex flex-col w-full max-w-[1390px] max-md:max-w-full">
+            <section className="flex justify-center items-center px-5 py-14 mt-12 w-full bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full mb-10">
+                <div className="flex flex-col w-full max-w-[1230px] max-md:max-w-full">
                     <h3 className="text-xl font-inter font-light text-black max-md:max-w-full">
                         Offers from 10+ brands
                     </h3>
