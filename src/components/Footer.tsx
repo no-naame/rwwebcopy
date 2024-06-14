@@ -31,21 +31,21 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className=" md:mb-[25px] flex flex-col items-start justify-center gap-1">
-                                <div className="mr-2 text-2xl font-semibold mb-0 text-left">Get The App:</div>
+                                <div className="mr-2 text-2xl mb-0 text-left">Get the App:</div>
                                 <Image src={google} alt="Google Play" width={150} height={50}
                                        className='scale-125 mt-0 ml-2 mr-2' placeholder='blur'/>
                             </div>
                         </div>
                         <div className='legal max-sm:pl-10 flex flex-col gap-4 md:mb-0 ml-6 mb-[36px]'>
                             <div className='text-2xl font-semibold text-white'>Legal</div>
-                            <Link href='/Privacy' className='text-xl'>Privacy Policy</Link>
+                            <Link href='/Privacy' className='text-xl text-[#FCFCFC]'>Privacy Policy</Link>
                             <Link href='/Terms' className='text-xl'>Terms & Conditions</Link>
                             <Link href='/Refund' className='text-xl'>Refund & Cancellation Policy</Link>
                             <div className='text-xl'>Data & Security</div>
                             <div className='text-xl'>Documents</div>
                         </div>
                         <div className='company max-sm:pl-16 flex flex-col gap-4'>
-                            <div className='text-2xl font-semibold text-white md:ml-[28px]'>Company</div>
+                            <div className='text-2xl font-semibold text-white ml-[30px]'>Company</div>
                             <div className='flex gap-3 items-center'>
                                 <FaPhone size={18} className='text-white scale-x-[-1]'/>
                                 <div className='text-xl'>+91 77188 17319</div>

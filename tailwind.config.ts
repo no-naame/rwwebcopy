@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 const config: Config = {
@@ -22,7 +22,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans], // Added Inter font here
+        sans: ['Inter', ...fontFamily.sans],
         lato: ['Lato', 'sans-serif'],
         handwritten: ['Kaushan Script', 'cursive'],
         passionOne: ['"Passion One"', 'sans-serif'],
@@ -33,12 +33,27 @@ const config: Config = {
       },
       screens: {
         '2lg': '1080px',
+        'mxl': '1150px',
       },
       boxShadow: {
+        'top-bottom': '0px 4px 8px 0px rgba(29, 29, 27, 0.10), 0px -4px 8px 0px rgba(29, 29, 27, 0.10)',
         custom: '0px 26.786px 117.19px 0px rgba(34, 34, 34, 0.06)',
         'custom-lg': '0px 50px 100px 0px rgba(21, 21, 21, 0.10)',
       },
+      animation: {
+        'loop-scroll': 'loop-scroll 7s linear infinite',
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+      },
       keyframes: {
+        'loop-scroll': {
+          from: {
+            transform: 'translateX(0)',
+          },
+          to: {
+            transform: 'translateX(-200%)',
+          },
+        },
         'accordion-down': {
           from: { height: '0' },
           to: { height: 'var(--radix-accordion-content-height)' },
@@ -47,15 +62,6 @@ const config: Config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
-        'loop-scroll': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-200%)' },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-        'loop-scroll': 'loop-scroll 7s linear infinite', // Added loop-scroll animation
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

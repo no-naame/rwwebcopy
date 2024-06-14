@@ -54,9 +54,9 @@ const list = [{
 const ShoppingBanner = () => {
     return(
         <>
-            <div className="relative max-w-[100%] mb-[120px] overflow-x-hidden">
-                <div className="mt-[10px] p-3 flex gap-1 justify-between items-center max-md:justify-center">
-                    <div className=" shopping z-10 ml-10">
+            <div className="relative max-w-[100%] overflow-x-hidden">
+                <div className="mt-[50px] px-3 flex justify-center items-start max-md:justify-center">
+                    <div className=" shopping z-10 ml-10 max-xl:scale-[0.9] mt-28">
                         <div className="text-5xl font-bold text-start text-[#272727]">Ab pay karna</div>
                         <div className="text-start text-[33px] mt-2 font-semibold text-[#272727]">
                             <h2 className="ml-[80px] max-w-[200px] -rotate-6 mt-1 relative right-4">
@@ -72,21 +72,18 @@ const ShoppingBanner = () => {
                             Unlock rewards and on every transaction.<br/>
                             Only on RewardWise!
                         </div>
-                        <div className="Download mt-[350px]">
-                            <div className="font-semibold text-center max-w-[80%] font-lato">
-                                Download The App NOW!
+                        <div className="Download mt-[170px]">
+                            <div className="font-semibold text-left font-lato text-[28px]">
+                                <span className=' text-[#C43939]'>Download</span> the app now!
                             </div>
-                            <div className="button flex justify-between items-center mt-[10px]">
-                                <div className=' max-w-[180px]'>
+                            <div className="button mt-[28px] relative right-3">
+                                <div className=' max-w-[180px] '>
                                     <Image src={google} alt='google'/>
-                                </div>
-                                <div className='max-w-[190px]'>
-                                    <Image src={apple} alt='appstore'/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='relative ml-6 z-0'>
+                    <div className='relative ml-6 z-0 bottom-10'>
                         <Image
                             src={mainPagePic}
                             alt="mainPic"
@@ -95,26 +92,24 @@ const ShoppingBanner = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#FBE74E] mb-[30px] p-4 w-[100%] overflow-hidden">
-                <div className="flex justify-evenly flex-wrap items-center gap-7">
-                    <div className="max-w-[600px] scale-125 ">
+            <div className="bg-[#FBE74E] mb-[30px] px-4 w-[100%] overflow-hidden">
+                <div className="flex justify-center items-end max-lg:items-center max-lg:flex-col gap-[56px]">
+                    <div className="max-w-[350px] ml-[90px] max-lg:ml-0  scale-125">
                         <Image
                             src={yellowImage}
                             alt="Happy Shopper"
                         />
                     </div>
-                    <div className="">
-                        <div className="flex items-start">
-                            <div className="text-7xl font-passionOne mr-1 max-md:mb-4">&#8220;</div>
-                            <div className="text-4xl font-lato leading-relaxed max-md:text-3xl max-md:leading-normal">
-                                I deserve the bonuses that <br/>
-                                come with my spending. Why <br/>
-                                not take advantage of all the <br/>
-                                extras available to me?
-                                <span className="text-7xl ml-2 font-passionOne">&#8221;</span>
+                    <div className=" mr-[100px] mb-7 max-lg:mb-0 max-lg:mr-0">
+                        <div className="flex items-start ">
+                            <div className="text-5xl font-passionOne mr-1 max-md:mb-4">&#8220;</div>
+                            <div className="text-3xl font-lato max-lg:text-4xl">
+                                I deserve the bonuses that come with my spending. Why not
+                                take advantage of all the extras available to me?
+                                <span className="text-5xl ml-2 font-passionOne">&#8221;</span>
                             </div>
                         </div>
-                        <footer className="mt-12 text-right max-w-[83%]">
+                        <footer className="mt-9 text-right">
                             <p className="text-2xl font-lato">- Nisha, Mumbai</p>
                         </footer>
                     </div>
@@ -122,7 +117,7 @@ const ShoppingBanner = () => {
             </div>
 
             <Slider/>
-            <h3 className="text-xl ml-16 font-light text-black max-md:max-w-full">Join your favourite loyalty
+            <h3 className="text-xl mt-10 ml-16 font-light text-black max-md:max-w-full">Join your favourite loyalty
                 program</h3>
             <h3 className=" text-2xl ml-16 font-medium text-black max-md:max-w-full">In just 4 steps</h3>
             <Steps stepList={list}/>

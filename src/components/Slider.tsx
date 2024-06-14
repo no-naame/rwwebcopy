@@ -85,12 +85,16 @@ function Slider() {
 
     return (
         <>
-            <div className="ml-20 p-7 font-inter">
-                <div className="text-xl font-normal">Shop category wise</div>
-                <div className="text-2xl font-medium">Explore Categories</div>
+            <div className="ml-[107px] py-4 font-inter">
+                <div className="text-xl text-[#000] font-normal">
+                    Shop category wise
+                </div>
+                <div className="text-2xl text-[#101010] font-medium">
+                    Explore Categories
+                </div>
             </div>
             <div className="flex items-center justify-center w-full">
-                <div className="flex overflow-x-auto p-8 w-[95%] gap-5 hide-scrollbar">
+                <div className="flex overflow-x-hidden p-8 w-[95%] gap-5">
                     {cards.map((card, index) => (
                         <Card
                             key={index}
@@ -100,15 +104,17 @@ function Slider() {
                     ))}
                 </div>
             </div>
-            <section className="flex justify-center items-center px-5 py-14 mt-12 w-full bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full mb-10">
+            <section className="flex justify-center items-center w-full bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full">
                 <div className="flex flex-col w-full max-w-[1230px] max-md:max-w-full">
-                    <h3 className="text-xl font-inter font-light text-black max-md:max-w-full">
-                        Offers from 10+ brands
-                    </h3>
-                    <h3 className=" text-2xl font-inter font-medium text-black max-md:max-w-full">
-                        In spotlight
-                    </h3>
-                    <div className="flex flex-col justify-center py-7 mt-14 max-md:mt-10 max-md:max-w-full">
+                    <div className="pt-[60px] pb-[50px]">
+                        <h3 className="text-xl font-inter font-light text-[#000] max-md:max-w-full">
+                            Offers from 10+ brands
+                        </h3>
+                        <h3 className=" text-2xl font-inter font-medium text-[#000] max-md:max-w-full">
+                            In spotlight
+                        </h3>
+                    </div>
+                    <div className="flex flex-col justify-center">
                         <Image
                             loading="lazy"
                             src={bigBasket}

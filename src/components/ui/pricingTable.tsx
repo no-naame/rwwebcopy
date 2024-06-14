@@ -6,7 +6,7 @@ const PricingTable = () => {
     return (
         <>
             <div className="max-w-7xl mx-auto mt-20 -z-40 overflow-x-auto font-lato">
-                <h1 className="text-center text-red-600 text-6xl mb-20">Feature Breakdown</h1>
+                <h1 className="text-center font-semibold text-[#C43939] text-6xl mb-20">Feature Breakdown</h1>
                 <Table className="mb-20">
                     <TableHeader>
                         <TableRow>
