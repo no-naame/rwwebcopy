@@ -90,7 +90,7 @@ function Slider() {
                 <div className="text-2xl font-medium">Explore Categories</div>
             </div>
             <div className="flex items-center justify-center w-full">
-                <div className="flex overflow-x-auto p-8 w-[95%] gap-5">
+                <div className="flex overflow-x-auto p-8 w-[95%] gap-5 hide-scrollbar">
                     {cards.map((card, index) => (
                         <Card
                             key={index}

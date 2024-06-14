@@ -44,7 +44,7 @@ const FinalHeader = () => {
                                     src={HeaderLogo}
                                     alt="Rewardwise-logo"
                                 />
-                                <span className="logo_text text-[#C43939] font-medium font-lato text-[23px] mt-1">
+                                <span className="logo_text text-[#C43939] font-bold font-lato text-[23px] mt-1">
                   Rewardwise
                 </span>
                             </Link>
