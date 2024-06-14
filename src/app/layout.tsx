@@ -10,7 +10,7 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "RewardWise",
+  title: "Rewardwise",
   description: "Make your customer loyal to you",
 };
 
