@@ -6,32 +6,32 @@ import FinalHeader from "@/components/FinalHeader";
 import Footer from "@/components/Footer";
 
 const fontInter = FontInter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+    subsets: ["latin"],
+    variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Rewardwise",
-  description: "Make your customer loyal to you",
+    title: "Rewardwise",
+    description: "Make your customer loyal to you",
 };
 
 export default function RootLayout({
-                                     children,
+                                       children,
                                    }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-      <html lang="en">
-      <body
-          className={cn(
-              "min-h-screen bg-background antialiased",
-              fontInter.variable
-          )}
-      >
-      <FinalHeader />
-      {children}
-      <Footer />
-      </body>
-      </html>
-  );
+    return (
+        <html lang="en">
+        <body
+            className={cn(
+                "min-h-screen bg-background antialiased font-inter",
+                fontInter.variable
+            )}
+        >
+        <FinalHeader />
+        {children}
+        <Footer />
+        </body>
+        </html>
+    );
 }

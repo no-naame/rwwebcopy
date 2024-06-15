@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-/* @import '@fontsource/lato'; */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import '@fontsource/passion-one';
-@import '@fontsource/cuprum';
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +6,7 @@
 html,
 body {
     @apply w-full overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
 }
 
 .hide-scrollbar {
@@ -88,8 +83,4 @@ td {
 
 .mb-20 {
     margin-bottom: 5rem;
-}
-
-.font-lato {
-    font-family: 'Lato', sans-serif;
 }

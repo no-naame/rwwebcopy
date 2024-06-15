@@ -22,6 +22,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
+        inter:[fontFamily],
         lato: ['Lato', 'sans-serif'],
         handwritten: ['Kaushan Script', 'cursive'],
         passionOne: ['"Passion One"', 'sans-serif'],
@@ -40,7 +41,7 @@ const config: Config = {
         'custom-lg': '0px 50px 100px 0px rgba(21, 21, 21, 0.10)',
       },
       animation: {
-        'loop-scroll': 'loop-scroll 7s linear infinite',
+        'loop-scroll': 'loop-scroll 8s linear infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
@@ -50,7 +51,7 @@ const config: Config = {
             transform: 'translateX(0)',
           },
           to: {
-            transform: 'translateX(-200%)',
+            transform: 'translateX(-250%)',
           },
         },
         'accordion-down': {
