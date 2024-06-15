@@ -5,7 +5,7 @@ import Image from 'next/image';
 import google from '../../public/GooglePlay.png'
 import apple from '../../public/AppStore.png'
 import yellowImage from '../../public/yellow_section_image.png'
-import mainPagePic from '../../public/hero_section.png'
+import homepage from '../../public/hero_section.png'
 import aurbhi from '../../public/aur bhiaurBhi.png'
 import Slider from "@/components/Slider";
 import Steps from "@/components/Steps";
@@ -54,9 +54,10 @@ const list = [{
 const ShoppingBanner = () => {
     return(
         <>
-            <div className="relative max-w-[100%] overflow-x-hidden">
-                <div className="mt-[50px] px-3 flex justify-center items-start max-md:justify-center">
-                    <div className=" shopping z-10 ml-10 max-xl:scale-[0.9] mt-28">
+            <div className="relative max-w-[100%]">
+                <div
+                    className="px-3 relative mt-[180px] mb-[150px] 2xl:ml-[200px] 2xl:mr-[200px] flex justify-start  items-center max-md:justify-center">
+                    <div className=" shopping z-10 ml-[80px] max-xl:scale-[0.9] ">
                         <div className="text-5xl font-bold text-start text-[#272727]">Ab pay karna</div>
                         <div className="text-start text-[33px] mt-2 font-semibold text-[#272727]">
                             <h2 className="ml-[80px] max-w-[200px] -rotate-6 mt-1 relative right-4">
@@ -83,9 +84,10 @@ const ShoppingBanner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='relative ml-6 z-0 bottom-10'>
+                    <div
+                        className=' absolute max-w-[70%] mt-[180px] max-lg:mt-[50px] 2xl:scale-75 2xl:left-[625px] left-[425px] overflow-hidden'>
                         <Image
-                            src={mainPagePic}
+                            src={homepage}
                             alt="mainPic"
                             className='max-md:absolute max-md:hidden'
                         />
@@ -93,17 +95,18 @@ const ShoppingBanner = () => {
                 </div>
             </div>
             <div className="bg-[#FBE74E] mb-[30px] px-4 w-[100%] overflow-hidden">
-                <div className="flex justify-center items-end max-lg:items-center max-lg:flex-col gap-[56px]">
+                <div
+                    className="flex justify-center items-end max-lg:items-center max-lg:flex-col max-md:gap-10 gap-[56px]">
                     <div className="max-w-[350px] ml-[90px] max-lg:ml-0  scale-125">
                         <Image
                             src={yellowImage}
                             alt="Happy Shopper"
                         />
                     </div>
-                    <div className=" mr-[100px] mb-7 max-lg:mb-0 max-lg:mr-0">
+                    <div className=" mr-[100px] mb-7 max-xl:mb-0 max-lg:mr-0">
                         <div className="flex items-start ">
                             <div className="text-5xl font-passionOne mr-1 max-md:mb-4">&#8220;</div>
-                            <div className="text-3xl font-lato max-lg:text-4xl">
+                            <div className="text-3xl font-lato max-lg:text-3xl max-lg:text-center">
                                 I deserve the bonuses that come with my spending. Why not
                                 take advantage of all the extras available to me?
                                 <span className="text-5xl ml-2 font-passionOne">&#8221;</span>

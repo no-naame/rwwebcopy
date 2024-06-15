@@ -77,7 +77,7 @@ const AboutUs = () => {
                     <div className='Misson py-14 px-12 shadow rounded-[30px]'>
                         <div className='flex flex-col gap-[36px]'>
                             <div className=' self-start'>
-                                <Image src={octicon} alt='octicon' className='rounded-[50%]' height={52} width={52}/>
+                                <Image src={octicon} alt='octicon' className='rounded-[50%]' height={60} width={60}/>
                             </div>
                             <div className='flex flex-col justify-center items-center'>
                                 <div className='text-[#C5393A] self-start mb-2 text-2xl'>What is Our Mission?</div>
@@ -97,7 +97,7 @@ const AboutUs = () => {
                     <div className='Vi py-14 px-12 shadow rounded-[30px]'>
                         <div className='flex flex-col gap-[36px]'>
                             <div className=' self-start'>
-                                <Image src={rocket} alt='rocket' height={52} width={52}/>
+                                <Image src={rocket} alt='rocket' height={60} width={60}/>
                             </div>
                             <div className='flex flex-col justify-center items-center'>
                                 <div className='text-[#C5393A] self-start mb-2 text-2xl'>What is Our Vision?</div>

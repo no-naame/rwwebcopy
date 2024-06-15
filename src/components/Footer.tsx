@@ -38,9 +38,9 @@ const Footer = () => {
                         </div>
                         <div className='legal max-sm:pl-10 flex flex-col gap-4 md:mb-0 ml-6 mb-[36px]'>
                             <div className='text-2xl font-semibold text-white'>Legal</div>
-                            <Link href='/Privacy' className='text-xl text-[#FCFCFC]'>Privacy Policy</Link>
-                            <Link href='/Terms' className='text-xl'>Terms & Conditions</Link>
-                            <Link href='/Refund' className='text-xl'>Refund & Cancellation Policy</Link>
+                            <Link href='/privacy-policy' className='text-xl text-[#FCFCFC]'>Privacy Policy</Link>
+                            <Link href='/terms-and-condition' className='text-xl'>Terms & Conditions</Link>
+                            <Link href='/copy-of-privacy-policy' className='text-xl'>Refund & Cancellation Policy</Link>
                             <div className='text-xl'>Data & Security</div>
                             <div className='text-xl'>Documents</div>
                         </div>
