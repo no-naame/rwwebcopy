@@ -40,7 +40,7 @@ const Footer = () => {
                             <div className='text-2xl font-semibold text-white'>Legal</div>
                             <Link href='/privacy-policy' className='text-xl text-[#FCFCFC]'>Privacy Policy</Link>
                             <Link href='/terms-and-condition' className='text-xl'>Terms & Conditions</Link>
-                            <Link href='/copy-of-privacy-policy' className='text-xl'>Refund & Cancellation Policy</Link>
+                            <Link href='/refund-policy' className='text-xl'>Refund & Cancellation Policy</Link>
                             <div className='text-xl'>Data & Security</div>
                             <div className='text-xl'>Documents</div>
                         </div>
