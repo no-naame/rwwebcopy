@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import '@fontsource/lato/index.css';
+/* @import '@fontsource/lato'; */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import '@fontsource/passion-one';
 @import '@fontsource/cuprum';
 
@@ -8,7 +9,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
     @apply w-full overflow-x-hidden;
 }
 
@@ -25,12 +27,15 @@ html, body {
     .nth-child-1\:bg-red-500:nth-child(1) {
         background-color: #f56565;
     }
+
     .nth-child-2\:bg-blue-500:nth-child(2) {
         background-color: #000000;
     }
+
     .nth-child-odd\:bg-green-500:nth-child(odd) {
         background-color: #48bb78;
     }
+
     .nth-child-even\:bg-yellow-500:nth-child(even) {
         background-color: #ecc94b;
     }
@@ -41,7 +46,8 @@ table {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     word-wrap: break-word;
     white-space: pre-wrap;
     text-align: center;

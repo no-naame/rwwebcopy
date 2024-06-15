@@ -22,7 +22,6 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
         lato: ['Lato', 'sans-serif'],
         handwritten: ['Kaushan Script', 'cursive'],
         passionOne: ['"Passion One"', 'sans-serif'],
