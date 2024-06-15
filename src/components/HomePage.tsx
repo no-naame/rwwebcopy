@@ -5,7 +5,7 @@ import Image from 'next/image';
 import google from '../../public/GooglePlay.png'
 import apple from '../../public/AppStore.png'
 import yellowImage from '../../public/yellow_section_image.png'
-import homepage from '../../public/hero_section.png'
+import homepage from '../../public/Hompage.png'
 import aurbhi from '../../public/aur bhiaurBhi.png'
 import Slider from "@/components/Slider";
 import Steps from "@/components/Steps";
