@@ -57,7 +57,7 @@ const ShoppingBanner = () => {
             <div className="relative max-w-[100%]">
                 <div
                     className="px-3 relative mt-[100px] mb-[150px] 2xl:ml-[200px] 2xl:mr-[200px] flex justify-start  items-center max-md:justify-center">
-                    <div className=" shopping z-10 ml-[80px] max-xl:scale-[0.9] ">
+                    <div className="max-sm:ml-[30px] shopping z-10 ml-[80px] max-xl:scale-[0.9] ">
                         <div className="text-5xl font-bold text-start text-[#272727]">Ab pay karna</div>
                         <div className="text-start text-[33px] mt-2 font-semibold text-[#272727]">
                             <h2 className="ml-[80px] max-w-[200px] -rotate-6 mt-1 relative right-4">
