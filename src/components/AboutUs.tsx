@@ -3,7 +3,7 @@ import Image from "next/image";
 import aboutusFrame from "../../public/aboutUsFrame.png";
 import overlay from "../../public/overlay.svg";
 import rewardwise from "../../public/Rewardwise.png";
-import octicon from "../../public/octicon.png";
+import octicon from "../../public/octiconCover.png";
 import rocket from "../../public/Rocketcover.png";
 import Team from "@/components/team";
 
