@@ -32,6 +32,7 @@ const config: Config = {
         '45px': '45px',
       },
       screens: {
+        '2sm': '440px',
         '2lg': '1080px',
         'mxl': '1150px',
       },
