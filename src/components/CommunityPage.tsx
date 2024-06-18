@@ -80,7 +80,7 @@ export default function Buss() {
                 </div>
                 <div className="mt-2">
                     <img
-                        src="https://s3-alpha-sig.figma.com/img/b340/5c7c/dccf1910fca4fbea4a1009a1ef1a706b?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NiSaWP~QXz2wavfFDr~VX87yS5moM1i05tSgyjwdjlBN5r4JGGXeboqQRGOD~zc2RVUj8KKR2MtWs8CxlUDmOsWeE2xQw~ai4I7qHZbui7Yu3fUv3ZrDn8liFdBgXSDHuodPt9RkoyGrkFo7I7-wXSxfZeT26iYa8ogDyKpciMBCwbOg09R7A1FQ4Q98yZ~t0~bVOpj853Weg4G8N65K3ESXHaPqPG5TZ5Kmm~i2Bu0w6iv0BtNit~uKsANkVerI~5LekafXM9KnyvHIAmZrClhCEn0cOZZcAoBd~i~CZLwj0y3k3VGHrSJ5PNSQqkOEuTH-sxp565coVASFlxmwaQ__"
+                        src="https://s3-alpha-sig.figma.com/img/b340/5c7c/dccf1910fca4fbea4a1009a1ef1a706b?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hAqSIRxGd~i1ZyWEZCD5jYQIlKMJZrr9gNlEEINHeHqEARF7C3Zo2~haGh~cSQyinWtV0F-CobLx-BYzWC1WpXghK5MW7gQxF~zrHailiNY~thI7vqvmI2DY7XNDjKSPK4KoeEMBt5RwFUyvffXsCxEPulTm8gr1W-WQ3ub0BAjO~EOiTqUjShpTW3mH~vKCNKU2hx-nkiLYXI4nJ1EXbsqYeUCkGXTAqwoedgPk3YHuDl9UTVhZSNl4hyKjx17ABgKkLrQSn03aJzD9OCYpJi5gshq3VBaPWes80UgLw5k8u9aFQ5yvTLA5zrs4cp4DCZ9-lG6Co~G-GHOJ34QRYQ__"
                         alt="Community"
                         className="px-16"
                     />

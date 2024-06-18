@@ -10,7 +10,7 @@ const PricingTable = () => {
                 <Table className="mb-20">
                     <TableHeader>
                         <TableRow>
-                            <TableHead className="min-w-[200px]">Marketing & Promotions</TableHead>
+                            <TableHead className="min-w-[200px] text-2xl">Marketing & Promotions</TableHead>
                             <TableHead className="min-w-[200px]">Starter</TableHead>
                             <TableHead className="min-w-[200px]">Growth</TableHead>
                             <TableHead className="min-w-[200px]">Enterprise</TableHead>
@@ -79,7 +79,7 @@ const PricingTable = () => {
                         <TableRow>
                             <TableCell>
                                 <div className="flex justify-between items-center">
-                                    <span className="flex-grow text-center">Discounts/offers</span>
+                                    <span className="flex-grow text-center">Discounts /offers</span>
                                     <InfoIcon className="ml-2"/>
                                 </div>
                             </TableCell>

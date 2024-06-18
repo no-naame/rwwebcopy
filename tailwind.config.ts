@@ -32,6 +32,7 @@ const config: Config = {
         '45px': '45px',
       },
       screens: {
+        '2sm': '440px',
         '2lg': '1080px',
         'mxl': '1150px',
       },
@@ -39,6 +40,7 @@ const config: Config = {
         'top-bottom': '0px 4px 8px 0px rgba(29, 29, 27, 0.10), 0px -4px 8px 0px rgba(29, 29, 27, 0.10)',
         custom: '0px 26.786px 117.19px 0px rgba(34, 34, 34, 0.06)',
         'custom-lg': '0px 50px 100px 0px rgba(21, 21, 21, 0.10)',
+        'mobileShadow': '0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px -2px 5px 0px rgba(0, 0, 0, 0.05);',
       },
       animation: {
         'loop-scroll': 'loop-scroll 8s linear infinite',

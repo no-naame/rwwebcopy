@@ -1,0 +1,61 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/components/ui/tableStyles.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+/* Add this CSS to your global styles or component-specific CSS file */
+
+@media (max-width: 1200px) {
+    .responsive-text {
+        font-size: 0.9rem;
+    }
+
+    .responsive-header {
+        font-size: 1.1rem;
+    }
+
+    .responsive-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .responsive-text {
+        font-size: 0.8rem;
+    }
+
+    .responsive-header {
+        font-size: 1rem;
+    }
+
+    .responsive-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 0.7rem;
+    }
+
+    .responsive-header {
+        font-size: 0.9rem;
+    }
+
+    .responsive-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-text {
+        font-size: 0.6rem;
+    }
+
+    .responsive-header {
+        font-size: 0.8rem;
+    }
+
+    .responsive-title {
+        font-size: 1.5rem;
+    }
+}
+
