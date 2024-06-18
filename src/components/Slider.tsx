@@ -10,122 +10,122 @@ import cafe from "../../public/slider/cafe.png";
 import bigBasket from "../../public/BigBasket.png";
 
 interface CardProps {
-    title: string;
-    imgSrc: StaticImageData;
-    imgAlt: string;
-    className?: string;
+  title: string;
+  imgSrc: StaticImageData;
+  imgAlt: string;
+  className?: string;
 }
 
 function Card({
-                  title,
-                  imgSrc,
-                  imgAlt,
-                  className,
-              }: CardProps): React.JSX.Element {
-    return (
-        <section
-            className={`flex flex-col font-inter items-center rounded-t-[30px] rounded-b-[3%] max-md:px-5 animate-loop-scroll ${className} `}
-        >
-            <h2 className="text-[28px] font-inter font-light mt-3">{title}</h2>
-            <Image
-                loading="lazy"
-                src={imgSrc}
-                alt={imgAlt}
-                className="mt-10 overflow-hidden bg-center"
-            />
-        </section>
-    );
+  title,
+  imgSrc,
+  imgAlt,
+  className,
+}: CardProps): React.JSX.Element {
+  return (
+    <section
+      className={`flex flex-col font-inter items-center rounded-t-[30px] rounded-b-[3%] max-md:px-5 animate-loop-scroll ${className} `}
+    >
+      <h2 className="text-[28px] font-inter font-light mt-3">{title}</h2>
+      <Image
+        loading="lazy"
+        src={imgSrc}
+        alt={imgAlt}
+        className="mt-10 overflow-hidden bg-center"
+      />
+    </section>
+  );
 }
 
 function Slider() {
-    const cards = [
-        {
-            title: "Fashion",
-            imgSrc: fashion,
-            imgAlt: "Fashion related image",
-            className: "bg-[#FEC5BB] h-[264px] w-[264px] flex-shrink-0",
-        },
-        {
-            title: "Schools",
-            imgSrc: schools,
-            imgAlt: "Schools related image",
-            className: "bg-[#F3C4FB] h-[264px] w-[264px] flex-shrink-0",
-        },
-        {
-            title: "Travel",
-            imgSrc: travel,
-            imgAlt: "Travel related image",
-            className: "bg-[#9EE37D] h-[264px] w-[264px] flex-shrink-0",
-        },
-        {
-            title: "Footwear",
-            imgSrc: footwear,
-            imgAlt: "Footwear related image",
-            className: "bg-[#B79CED] h-[264px] w-[264px] flex-shrink-0",
-        },
-        {
-            title: "Restaurant",
-            imgSrc: restaurant,
-            imgAlt: "Restaurant related image",
-            className: "bg-[#F8AD9D] h-[264px] w-[264px] flex-shrink-0",
-        },
-        {
-            title: "Electronics",
-            imgSrc: electronics,
-            imgAlt: "Electronics related image",
-            className: "bg-slate-200 h-[264px] w-[264px] flex-shrink-0",
-        },
-        {
-            title: "Cafe",
-            imgSrc: cafe,
-            imgAlt: "Cafe related image",
-            className: "bg-yellow-200 h-[264px] w-[264px] flex-shrink-0",
-        },
-    ];
+  const cards = [
+    {
+      title: "Fashion",
+      imgSrc: fashion,
+      imgAlt: "Fashion related image",
+      className: "bg-[#FEC5BB] h-[264px] w-[264px] flex-shrink-0",
+    },
+    {
+      title: "Schools",
+      imgSrc: schools,
+      imgAlt: "Schools related image",
+      className: "bg-[#F3C4FB] h-[264px] w-[264px] flex-shrink-0",
+    },
+    {
+      title: "Travel",
+      imgSrc: travel,
+      imgAlt: "Travel related image",
+      className: "bg-[#9EE37D] h-[264px] w-[264px] flex-shrink-0",
+    },
+    {
+      title: "Footwear",
+      imgSrc: footwear,
+      imgAlt: "Footwear related image",
+      className: "bg-[#B79CED] h-[264px] w-[264px] flex-shrink-0",
+    },
+    {
+      title: "Restaurant",
+      imgSrc: restaurant,
+      imgAlt: "Restaurant related image",
+      className: "bg-[#F8AD9D] h-[264px] w-[264px] flex-shrink-0",
+    },
+    {
+      title: "Electronics",
+      imgSrc: electronics,
+      imgAlt: "Electronics related image",
+      className: "bg-slate-200 h-[264px] w-[264px] flex-shrink-0",
+    },
+    {
+      title: "Cafe",
+      imgSrc: cafe,
+      imgAlt: "Cafe related image",
+      className: "bg-yellow-200 h-[264px] w-[264px] flex-shrink-0",
+    },
+  ];
 
-    return (
-        <>
-            <div className="ml-[107px] py-4 font-inter">
-                <div className="text-xl text-[#000] font-normal">
-                    Shop category wise
-                </div>
-                <div className="text-2xl text-[#101010] font-medium">
-                    Explore Categories
-                </div>
-            </div>
-            <div className="flex items-center justify-center w-full">
-                <div className="flex overflow-x-hidden p-8 w-[95%] gap-5">
-                    {cards.map((card, index) => (
-                        <Card
-                            key={index}
-                            {...card}
-                            className={`${card.className} flex-none`}
-                        />
-                    ))}
-                </div>
-            </div>
-            <section className="flex justify-center items-center w-full bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-                <div className="flex flex-col w-full max-w-[1230px] max-md:max-w-full">
-                    <div className="pt-[60px] pb-[50px]">
-                        <h3 className="text-xl font-inter font-light text-[#000] max-md:max-w-full">
-                            Offers from 10+ brands
-                        </h3>
-                        <h3 className=" text-2xl font-inter font-medium text-[#000] max-md:max-w-full">
-                            In spotlight
-                        </h3>
-                    </div>
-                    <div className="flex flex-col justify-center">
-                        <Image
-                            loading="lazy"
-                            src={bigBasket}
-                            className="w-full"
-                            alt="Spotlight Offers"
-                        />
-                    </div>
-                </div>
-            </section>
-        </>
-    );
+  return (
+    <>
+      <div className="ml-[107px] py-4 font-inter">
+        <div className="text-xl text-[#000] font-normal">
+          Shop category wise
+        </div>
+        <div className="text-2xl text-[#101010] font-medium">
+          Explore Categories
+        </div>
+      </div>
+      <div className="flex items-center justify-center w-full">
+        <div className="flex overflow-x-hidden p-8 w-[95%] gap-5">
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              {...card}
+              className={`${card.className} flex-none`}
+            />
+          ))}
+        </div>
+      </div>
+      <section className="flex justify-center items-center w-full bg-gray-100 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-col w-full max-w-[1230px] max-md:max-w-full">
+          <div className="pt-[60px] pb-[50px]">
+            <h3 className="text-xl font-inter font-light text-[#000] max-md:max-w-full">
+              Offers from 10+ brands
+            </h3>
+            <h3 className=" text-2xl font-inter font-medium text-[#000] max-md:max-w-full">
+              In spotlight
+            </h3>
+          </div>
+          <div className="flex flex-col justify-center">
+            <Image
+              loading="lazy"
+              src={bigBasket}
+              className="w-full"
+              alt="Spotlight Offers"
+            />
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default Slider;
