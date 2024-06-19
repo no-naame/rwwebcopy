@@ -1,6 +1,5 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import "./tableStyles.css"
 
 const Table = React.forwardRef<
     HTMLTableElement,
@@ -23,7 +22,7 @@ const TableHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <thead
         ref={ref}
-        className={cn("[&_tr]:border rounded-lg border-[1.5px] border-[#BCCFFF] bg-gradient-to-t from-[#E3EAF4] to-[#FFF]", className)}
+        className={cn("[&_tr]:border rounded-lg sm:scale-100 border-[1.5px] border-[#BCCFFF] bg-gradient-to-t from-[#E3EAF4] to-[#FFF]", className)}
         {...props}
     />
 ));
@@ -63,7 +62,7 @@ const TableRow = React.forwardRef<
     <tr
         ref={ref}
         className={cn(
-            "p-96 transition-colors data-[state=selected]:bg-slate-100 dark:hover:bg-slate-800/50 dark:data-[state=selected]:bg-slate-800 rounded-lg border border-[#BCCFFF]",
+            "transition-colors sm:scale-100 data-[state=selected]:bg-slate-100 dark:hover:bg-slate-800/50 dark:data-[state=selected]:bg-slate-800 rounded-lg border border-[#BCCFFF]",
             className
         )}
         {...props}
@@ -78,7 +77,7 @@ const TableHead = React.forwardRef<
     <th
         ref={ref}
         className={cn(
-            "h-12 px-7 p-7 text-center align-middle font-bold text-xl text-slate-500 [&:has([role=checkbox])]:pr-0 dark:text-slate-400 border-b border-t first:border-l last:border-r first:rounded-l-xl last:rounded-r-xl border-[#BCCFFF] responsive-header",
+            "h-12 px-4 sm:px-7 p-2 sm:p-7 text-center align-middle font-bold text-sm sm:text-xl text-slate-500 [&:has([role=checkbox])]:pr-0 dark:text-slate-400 border-b border-t first:border-l last:border-r first:rounded-l-xl last:rounded-r-xl border-[#BCCFFF]",
             className
         )}
         style={{ paddingBottom: '20px' }}
@@ -93,7 +92,7 @@ const TableCell = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <td
         ref={ref}
-        className={cn("p-7 align-middle text-center text-lg [&:has([role=checkbox])]:pr-0 bg-gradient-to-b from-[#FFF] to-[#F4F5F6] border-t border-b first:border-l last:border-r border-[#F3F1F1] first:rounded-l-lg last:rounded-r-lg responsive-text", className)}
+        className={cn("p-2 sm:p-7 align-middle text-center text-xs sm:text-lg [&:has([role=checkbox])]:pr-0 bg-gradient-to-b from-[#FFF] to-[#F4F5F6] border-t border-b first:border-l last:border-r border-[#F3F1F1] first:rounded-l-lg last:rounded-r-lg", className)}
         style={{ padding: '15px' }}
         {...props}
     />
