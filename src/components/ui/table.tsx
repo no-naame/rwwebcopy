@@ -22,7 +22,7 @@ const TableHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <thead
         ref={ref}
-        className={cn("[&_tr]:border rounded-lg sm:scale-100 border-[1.5px] border-[#BCCFFF] bg-gradient-to-t from-[#E3EAF4] to-[#FFF]", className)}
+        className={cn("[&_tr]:border rounded-lg scale-90 sm:scale-100 border-[1.5px] border-[#BCCFFF] bg-gradient-to-t from-[#E3EAF4] to-[#FFF]", className)}
         {...props}
     />
 ));
@@ -34,7 +34,7 @@ const TableBody = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <tbody
         ref={ref}
-        className={cn("[&_tr:last-child]:border-2", className)}
+        className={cn("[&_tr:last-child]:border-2 scale-90 sm:scale-100", className)}
         {...props}
     />
 ));
@@ -77,7 +77,7 @@ const TableHead = React.forwardRef<
     <th
         ref={ref}
         className={cn(
-            "h-12 px-4 sm:px-7 p-0  sm:p-7 whitespace-normal break-keep text-center align-middle font-bold text-sm sm:text-xl text-slate-500 [&:has([role=checkbox])]:pr-0 dark:text-slate-400 border-b border-t first:border-l last:border-r first:rounded-l-xl last:rounded-r-xl border-[#BCCFFF]",
+            "h-12 px-4 sm:px-7 p-0 sm:p-7 whitespace-normal break-keep text-center align-middle font-bold text-sm sm:text-xl text-slate-500 [&:has([role=checkbox])]:pr-0 dark:text-slate-400 border-b border-t first:border-l last:border-r first:rounded-l-xl last:rounded-r-xl border-[#BCCFFF]",
             className
         )}
         style={{ verticalAlign: 'middle', height: 'auto', paddingBottom: '20px', whiteSpace: 'normal', wordBreak: 'keep-all' }}
