@@ -7,7 +7,8 @@ export default function Pricing() {
         <div>
             <div className="max-w-7xl mx-auto p-6">
                 <div className="text-center mb-12">
-                    <h2 className="text-6xl font-semibold mb-4 text-[#C43939] mt-36">Pricing Plans</h2>
+                    <h2 className="text-6xl font-medium mb-4 text-[#C43939] mt-36">Business Strategies
+                        for Every Stage</h2>
                     <p className="text-2xl mt-16">
                         Choose the plan that's right for your business, whether you're just getting started or having
                         already established, there's a plan for you.
