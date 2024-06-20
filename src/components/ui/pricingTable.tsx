@@ -46,7 +46,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Membership</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className=" w-[10px] h-[10px] hidden sm:block sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell>1 Memberships</TableCell>
@@ -57,7 +57,7 @@ const PricingTable = () => {
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Pause, Cancel</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -80,7 +80,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Discounts/ offers</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] hidden sm:block sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -116,7 +116,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Email</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 w-[10px] hidden sm:block h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell>1 Ad/month</TableCell>
@@ -127,7 +127,7 @@ const PricingTable = () => {
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Chat Support</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 w-[10px] hidden sm:block h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell>1 Ad/month</TableCell>
@@ -151,7 +151,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Point Based Loyalty</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 w-[10px] hidden sm:block h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -174,7 +174,7 @@ const PricingTable = () => {
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Loyalty Discounts</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -197,7 +197,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Any Loyalty Reward</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -220,7 +220,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Loyalty Level</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -256,7 +256,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Point Based Loyalty</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -279,7 +279,7 @@ const PricingTable = () => {
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Loyalty Discounts</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -302,7 +302,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Any Loyalty Reward</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -325,7 +325,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Loyalty Level</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -361,7 +361,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Loyalty</span>
-                                    <InfoIcon className="ml-2 w-[20px] h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[20px] h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -407,7 +407,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Personal</span>
-                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -430,7 +430,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Offer Creations</span>
-                                    <InfoIcon className="ml-2 w-[20px] h-[20px]"/>
+                                    <InfoIcon className="ml-2 hidden sm:block w-[20px] h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
