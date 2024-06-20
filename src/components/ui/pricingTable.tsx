@@ -10,10 +10,10 @@ const PricingTable = () => {
                 <Table className="mb-20">
                     <TableHeader>
                         <TableRow>
-                            <TableHead className="min-w-[200px]">Marketing & Promotions</TableHead>
-                            <TableHead className="min-w-[200px]">Starter</TableHead>
-                            <TableHead className="min-w-[200px]">Growth</TableHead>
-                            <TableHead className="min-w-[200px]">Enterprise</TableHead>
+                            <TableHead className="min-w-[200px]" style={{ padding: '7px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Marketing & Promotions</TableHead>
+                            <TableHead className="min-w-[200px]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Starter</TableHead>
+                            <TableHead className="min-w-[200px]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Growth</TableHead>
+                            <TableHead className="min-w-[200px]" style={{ padding: '10px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Enterprise</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -35,10 +35,10 @@ const PricingTable = () => {
                 <Table className="mb-20">
                     <TableHeader style={{background: 'linear-gradient(0deg, #E3FFB1 0%, #FFF 100%)'}}>
                         <TableRow>
-                            <TableHead className="min-w-[200px] border-[#B8EC5C]">Memberships</TableHead>
-                            <TableHead className="min-w-[200px] border-[#B8EC5C]">Starter</TableHead>
-                            <TableHead className="min-w-[200px] border-[#B8EC5C]">Growth</TableHead>
-                            <TableHead className="min-w-[200px] border-[#B8EC5C]">Enterprise</TableHead>
+                            <TableHead className="min-w-[200px] border-[#B8EC5C]" style={{ padding: '1px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Memberships</TableHead>
+                            <TableHead className="min-w-[200px] border-[#B8EC5C]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Starter</TableHead>
+                            <TableHead className="min-w-[200px] border-[#B8EC5C]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Growth</TableHead>
+                            <TableHead className="min-w-[200px] border-[#B8EC5C]" style={{ padding: '10px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Enterprise</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -46,7 +46,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Membership</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell>1 Memberships</TableCell>
@@ -57,7 +57,7 @@ const PricingTable = () => {
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Pause, Cancel</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -79,8 +79,8 @@ const PricingTable = () => {
                         <TableRow>
                             <TableCell>
                                 <div className="flex justify-between items-center">
-                                    <span className="flex-grow text-center">Discounts/offers</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <span className="flex-grow text-center">Discounts/ offers</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -105,10 +105,10 @@ const PricingTable = () => {
                 <Table className="mb-20">
                     <TableHeader style={{background: 'linear-gradient(0deg, #FFE5EC 0%, #FFF 100%)'}}>
                         <TableRow>
-                            <TableHead className="min-w-[200px] border-[#FFC2D3]">Support</TableHead>
-                            <TableHead className="min-w-[200px] border-[#FFC2D3]">Starter</TableHead>
-                            <TableHead className="min-w-[200px] border-[#FFC2D3]">Growth</TableHead>
-                            <TableHead className="min-w-[200px] border-[#FFC2D3]">Enterprise</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFC2D3]" style={{ padding: '18px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Support</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFC2D3]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Starter</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFC2D3]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Growth</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFC2D3]" style={{ padding: '10px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Enterprise</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -116,7 +116,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Email</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell>1 Ad/month</TableCell>
@@ -127,7 +127,7 @@ const PricingTable = () => {
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Chat Support</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell>1 Ad/month</TableCell>
@@ -140,10 +140,10 @@ const PricingTable = () => {
                 <Table className="mb-20">
                     <TableHeader style={{background: 'linear-gradient(0deg, #fed 0%, #FFF 100%)'}}>
                         <TableRow>
-                            <TableHead className="min-w-[200px] border-[#FFD0A1]">Loyalty</TableHead>
-                            <TableHead className="min-w-[200px] border-[#FFD0A1]">Starter</TableHead>
-                            <TableHead className="min-w-[200px] border-[#FFD0A1]">Growth</TableHead>
-                            <TableHead className="min-w-[200px] border-[#FFD0A1]">Enterprise</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFD0A1]" style={{ padding: '20px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Loyalty</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFD0A1]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Starter</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFD0A1]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Growth</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFD0A1]" style={{ padding: '10px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Enterprise</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -151,7 +151,7 @@ const PricingTable = () => {
                             <TableCell>
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Point Based Loyalty</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -174,7 +174,7 @@ const PricingTable = () => {
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
                                     <span className="flex-grow text-center">Loyalty Discounts</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -196,8 +196,31 @@ const PricingTable = () => {
                         <TableRow>
                             <TableCell>
                                 <div className="flex justify-between items-center">
-                                    <span className="flex-grow text-center">Referral Scheme</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <span className="flex-grow text-center">Any Loyalty Reward</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-green-500 h-full align-middle">
+                                    <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <div className="flex justify-between items-center">
+                                    <span className="flex-grow text-center">Loyalty Level</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -220,25 +243,25 @@ const PricingTable = () => {
                 </Table>
 
                 <Table className="mb-20">
-                    <TableHeader style={{background: 'linear-gradient(0deg, #E8F8FF 0%, #FFF 100%)'}}>
+                    <TableHeader style={{background: 'linear-gradient(0deg, #E7E7FF 0%, #FFF 100%)'}}>
                         <TableRow>
-                            <TableHead className="min-w-[200px] border-[#98DEFF]">Customer Engagement</TableHead>
-                            <TableHead className="min-w-[200px] border-[#98DEFF]">Starter</TableHead>
-                            <TableHead className="min-w-[200px] border-[#98DEFF]">Growth</TableHead>
-                            <TableHead className="min-w-[200px] border-[#98DEFF]">Enterprise</TableHead>
+                            <TableHead className="min-w-[200px] border-[#D3D3FF]" style={{ padding: '20px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Voucher</TableHead>
+                            <TableHead className="min-w-[200px] border-[#D3D3FF]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Starter</TableHead>
+                            <TableHead className="min-w-[200px] border-[#D3D3FF]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Growth</TableHead>
+                            <TableHead className="min-w-[200px] border-[#D3D3FF]" style={{ padding: '10px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Enterprise</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         <TableRow>
                             <TableCell>
                                 <div className="flex justify-between items-center">
-                                    <span className="flex-grow text-center">Single Time Rewards</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <span className="flex-grow text-center">Point Based Loyalty</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
-                                <div className="inline-block text-green-500 h-full align-middle">
-                                    <CheckIcon className="inline-block"/>
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -255,8 +278,8 @@ const PricingTable = () => {
                         <TableRow>
                             <TableCell className="border-l">
                                 <div className="flex justify-between items-center">
-                                    <span className="flex-grow text-center">Level Based Rewards</span>
-                                    <InfoIcon className="ml-2"/>
+                                    <span className="flex-grow text-center">Loyalty Discounts</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
@@ -267,6 +290,157 @@ const PricingTable = () => {
                             <TableCell className="text-center align-middle">
                                 <div className="inline-block text-green-500 h-full align-middle">
                                     <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-green-500 h-full align-middle">
+                                    <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <div className="flex justify-between items-center">
+                                    <span className="flex-grow text-center">Any Loyalty Reward</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-green-500 h-full align-middle">
+                                    <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <div className="flex justify-between items-center">
+                                    <span className="flex-grow text-center">Loyalty Level</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-green-500 h-full align-middle">
+                                    <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+
+                <Table className="mb-20">
+                    <TableHeader style={{background: 'linear-gradient(0deg, #FBF8CC 0%, #FFF 100%)'}}>
+                        <TableRow>
+                            <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '20px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Customization</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Starter</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Growth</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '10px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Enterprise</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow>
+                            <TableCell>
+                                <div className="flex justify-between items-center">
+                                    <span className="flex-grow text-center">Loyalty</span>
+                                    <InfoIcon className="ml-2 w-[20px] h-[20px]"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-green-500 h-full align-middle">
+                                    <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell className="border-l">
+                                <div className="flex justify-between items-center">
+                                    <span className="flex-grow text-center">Membership</span>
+                                    <InfoIcon className=" w-[20px] h-[20px]"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-green-500 h-full align-middle">
+                                    <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <div className="flex justify-between items-center">
+                                    <span className="flex-grow text-center">Personal</span>
+                                    <InfoIcon className="ml-2 w-[10px] h-[10px] sm:w-[20px] sm:h-[20px]"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-green-500 h-full align-middle">
+                                    <CheckIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <div className="flex justify-between items-center">
+                                    <span className="flex-grow text-center">Offer Creations</span>
+                                    <InfoIcon className="ml-2 w-[20px] h-[20px]"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
+                                </div>
+                            </TableCell>
+                            <TableCell className="text-center align-middle">
+                                <div className="inline-block text-red-500 h-full align-middle">
+                                    <XIcon className="inline-block"/>
                                 </div>
                             </TableCell>
                             <TableCell className="text-center align-middle">
