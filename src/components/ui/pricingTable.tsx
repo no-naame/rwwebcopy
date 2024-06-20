@@ -350,7 +350,7 @@ const PricingTable = () => {
                 <Table className="mb-20">
                     <TableHeader style={{background: 'linear-gradient(0deg, #FBF8CC 0%, #FFF 100%)'}}>
                         <TableRow>
-                            <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '20px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Customization</TableHead>
+                            <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '0px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Customization</TableHead>
                             <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Starter</TableHead>
                             <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '15px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Growth</TableHead>
                             <TableHead className="min-w-[200px] border-[#FFEF00]" style={{ padding: '10px', whiteSpace: 'normal', wordBreak: 'keep-all' }}>Enterprise</TableHead>
