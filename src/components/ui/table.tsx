@@ -77,10 +77,10 @@ const TableHead = React.forwardRef<
     <th
         ref={ref}
         className={cn(
-            "h-12 px-4 sm:px-7 p-2 sm:p-7 text-center align-middle font-bold text-sm sm:text-xl text-slate-500 [&:has([role=checkbox])]:pr-0 dark:text-slate-400 border-b border-t first:border-l last:border-r first:rounded-l-xl last:rounded-r-xl border-[#BCCFFF]",
+            "h-12 px-4 sm:px-7 p-0  sm:p-7 whitespace-normal break-keep text-center align-middle font-bold text-sm sm:text-xl text-slate-500 [&:has([role=checkbox])]:pr-0 dark:text-slate-400 border-b border-t first:border-l last:border-r first:rounded-l-xl last:rounded-r-xl border-[#BCCFFF]",
             className
         )}
-        style={{ paddingBottom: '20px' }}
+        style={{ verticalAlign: 'middle', height: 'auto', paddingBottom: '20px', whiteSpace: 'normal', wordBreak: 'keep-all' }}
         {...props}
     />
 ));
@@ -92,8 +92,8 @@ const TableCell = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <td
         ref={ref}
-        className={cn("p-2 sm:p-7 align-middle text-center text-xs sm:text-lg [&:has([role=checkbox])]:pr-0 bg-gradient-to-b from-[#FFF] to-[#F4F5F6] border-t border-b first:border-l last:border-r border-[#F3F1F1] first:rounded-l-lg last:rounded-r-lg", className)}
-        style={{ padding: '15px' }}
+        className={cn("p-3 sm:p-7 whitespace-normal break-keep align-middle text-center text-xs sm:text-lg [&:has([role=checkbox])]:pr-0 bg-gradient-to-b from-[#FFF] to-[#F4F5F6] border-t border-b first:border-l last:border-r border-[#F3F1F1] first:rounded-l-lg last:rounded-r-lg", className)}
+
         {...props}
     />
 ));
